@@ -1,0 +1,46 @@
+<!doctype html>
+<title>NoteBook</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+
+<body>
+{% block content %}
+    <h1>NoteBook</h1>
+
+    <div class="search">
+        <form method="GET">
+            <i class="fi fi-br-search-heart"></i>
+            <input type="search" name="search" placeholder="Search for a note" required>
+            <br>
+        </form>
+    </div>
+
+    <div class="search_result">
+        {% for mn in matched_notes %}
+        <li><a href="{{ url_for('notepage', mn=mn.title) }}" target="_blank">{{ mn.title }}</a></li>
+        {% endfor %}
+    </div>  
+
+    <div class="note_disp">
+        <i class="fi fi-ss-journal"></i>
+        <span>All Notes</span>
+    <div>
+
+    <div class="notes">
+        <ul>
+            {% for note in notes %}
+            <li><a href="{{ url_for('notepage', mn=note.title) }}" target="_blank">{{ note.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="add">
+        <form method="POST">
+            <input type="text" size="46" name="note" placeholder="Note title" required><br>
+            <input type="text" id="contentBox" name="content" placeholder="Type note here" required><br><br>
+            <button>Submit</button>
+        </form>
+    </div>
+{% endblock %}
+</body>
