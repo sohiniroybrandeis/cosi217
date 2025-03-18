@@ -7,6 +7,9 @@
   - templates (directory)
     - base.html: Base HTML file for website
     - note.html: HTML file to display webpage with individual note, extends Base file.
+   
+- instance (directory)
+  - db.sqlite: Database file for writing all notes to.
 - requirements.txt
 - run.py: Runs Flask app
 
