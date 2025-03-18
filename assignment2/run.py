@@ -1,3 +1,3 @@
 import subprocess
 
-subprocess.run(["python", "notebook/model.py"])
+subprocess.run(["python", "notebook/routes.py"])
