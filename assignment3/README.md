@@ -29,4 +29,5 @@ If the following error arises on Mac:
 `Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.`
 `On macOS, try disabling the 'AirPlay Receiver' service from System Preferences -> General -> AirDrop & Handoff.`
 
-This is not a complicated error to figure out. Follow the exact directions listed, and the error should go away. 
+Follow the exact directions listed, and the error should go away. That is to say:
+- Disable Airplay Receiver by going to System Preferences -> General -> AirDrop & Handoff.
