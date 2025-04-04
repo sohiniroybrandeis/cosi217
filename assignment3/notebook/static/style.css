@@ -1,0 +1,68 @@
+h1 {
+    text-align: center;
+    border-style: solid;
+    outline-style: groove;
+  }
+
+body {
+    background-color: #FFC0C0;
+  }
+
+.search {
+  text-align: center;
+}
+
+.search_result {
+  text-align: center;
+}
+
+.add {
+  text-align: center;
+}
+
+.note_disp { 
+  display: inline;
+}
+
+.notes {
+  background-color: #FFB6C1;
+  width: 300px;
+  height: 300px;
+  border: 10px solid #DE5D83;
+  outline-style: solid;
+  padding: 50px;
+  margin: 20px;  
+}
+
+.notebox {
+  width: 300px;
+  border: 10px solid #023020;
+  padding: 50px;
+  margin: 10px;
+  text-wrap: wrap;
+}
+
+.commentbox {
+  width: 150px;
+  height: 50px;
+  border: 10px solid #023020;
+  padding: 30px;
+  margin: 10px;
+  text-wrap: wrap;
+}
+
+#contentBox {
+  width: 300px;  /* Increase width */
+  height: 100px;  /* Increase height */
+  font-size: 16px; /* Increase text size */
+  padding: 10px;  /* Add padding inside */
+  text-wrap: wrap;
+}
+
+#commentBox {
+  width: 250px;  /* Increase width */
+  height: 50px;  /* Increase height */
+  font-size: 12px; /* Increase text size */
+  padding: 10px;  /* Add padding inside */
+  text-wrap: wrap;
+}
