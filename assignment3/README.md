@@ -23,6 +23,9 @@ Building the Docker container:
 Running the Docker container:
 `docker run -p 5000:5000 -v $(pwd)/instance:/app/instance my-flask-app`
 
+
+
+
 If the following error arises on Mac:
 
 `Address already in use`
