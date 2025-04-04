@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST">
+    <input type="hidden" name="action" value="home">
+    <button>Return to Home</button>
+</form>
+
+    <h3>{{ title }}</h3>
+    <div class ="notebox">
+        <p>{{ content }}</p>
+        <p>Posted: {{ note_date }}</p>
+    </div>
+
+    {% for comment, timestamp in comments %}
+    <div class="commentbox">
+        <p>{{ comment }}</p>
+        <p><small>{{ timestamp }}</small></p>
+    </div>
+    {% endfor %}
+    
+    <script src="{{ url_for('static', filename='toggle.js') }}"></script>
+    <button id="addComment" onclick="commentDisplay()">Add a Comment</button>
+
+    <form method="POST">
+        <input type="hidden" name="action" value="comment">
+        <input type="text" id="commentForm" style="display: none;" size="46" name="comment" placeholder="Add a comment" required><br>
+        <button id="commentButton" style="display: none;">Comment</button>
+    </form>
+    <br><br>
+    <form method="POST">
+        <input type="hidden" name="action" value="delete">
+        <button>Delete this Note</button>
+    </form>
+{% endblock %}
