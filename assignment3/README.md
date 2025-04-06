@@ -13,6 +13,7 @@
 - instance (directory)
   - db.sqlite: Database file for writing all notes to.
 - requirements.txt
+- Dockerfile: Assembles Docker image.
 - run.py: Runs Flask app
 
 ### To run:
