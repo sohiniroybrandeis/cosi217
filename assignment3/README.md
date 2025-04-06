@@ -18,6 +18,8 @@
 
 ### To run:
 
+Make sure the Docker Daemon is running.
+
 Building the Docker container:
 `docker build -t my-flask-app .`
 
